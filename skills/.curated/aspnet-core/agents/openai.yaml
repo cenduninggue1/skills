@@ -2,4 +2,5 @@ interface:
   display_name: "ASP.NET Core"
   short_description: "[Windows only] Build and review ASP.NET Core web apps"
   icon_large: "./assets/dotnet-logo.png"
-  default_prompt: "Create a new $aspnet-core website for me."
+  # Changed default prompt to be more specific about project type
+  default_prompt: "Create a new $aspnet-core REST API project for me with a basic controller and Swagger documentation."
