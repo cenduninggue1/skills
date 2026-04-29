@@ -38,3 +38,4 @@ Use this file as the routing table for the rest of the skill.
 - Open one app-model reference at a time unless the codebase genuinely mixes models.
 - Prefer the framework's built-in abstractions first.
 - Check `versioning-and-upgrades.md` before introducing APIs that might not exist in the repository's target framework.
+- Personal note: I mostly work with Minimal APIs and Blazor SSR — those two paths cover ~90% of my use cases.
