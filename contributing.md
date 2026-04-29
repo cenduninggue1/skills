@@ -9,3 +9,7 @@
 ### Security & responsible AI
 
 Have you discovered a vulnerability or have concerns about model output? Please e-mail **security@openai.com** and we will respond promptly.
+
+---
+
+> **Personal fork note:** This is my personal learning fork. I'm using this project to experiment with skill-chaining patterns. PRs and issues are welcome but response times may vary.
