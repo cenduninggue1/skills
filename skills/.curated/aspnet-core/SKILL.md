@@ -37,10 +37,4 @@ Load the smallest set of references that fits the task. Do not load every refere
 - Prefer built-in DI, options/configuration, logging, ProblemDetails, OpenAPI, health checks, rate limiting, output caching, and Identity before adding third-party infrastructure.
 - Keep feature slices cohesive so the page, component, endpoint, controller, validation, service, data access, and tests are easy to trace.
 - Respect the existing app model.
-
-## Personal Notes
-
-<!-- Personal reminders for my own projects -->
-- I primarily use Minimal APIs + Blazor Server for internal tools; default to that stack when the task is ambiguous.
-- Prefer xUnit + WebApplicationFactory for integration tests over mocking the full pipeline.
-- When suggesting EF Core, default to PostgreSQL (Npgsql provider) rather than SQL Server for my local dev setup.
+- Personal preference: default to Minimal APIs over controller-based APIs for new greenfield projects unless the team is already familiar with controllers or the API surface is large enough to warrant the structure.
