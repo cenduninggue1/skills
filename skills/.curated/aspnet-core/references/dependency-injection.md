@@ -23,6 +23,8 @@ builder.Services.AddSingleton<IConfiguration>(builder.Configuration);
 | `Scoped` | One instance per HTTP request | Database contexts, per-request state |
 | `Transient` | New instance every time requested | Lightweight, stateless services |
 
+> **Note:** Be careful not to inject a `Scoped` or `Transient` service into a `Singleton` — this causes a "captive dependency" bug where the shorter-lived service gets stuck in the singleton for the app's lifetime.
+
 ## Constructor Injection
 
 The most common pattern — declare dependencies as constructor parameters:
@@ -116,5 +118,5 @@ public class EmailSender
 
 ## See Also
 
-- [APIs — Minimal and Controllers](./apis-minimal-and-controllers.md)
+- [APIs — Minimal and Controllers](./minimal-apis.md)
 - [Microsoft Docs: Dependency injection in ASP.NET Core](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/dependency-injection)
